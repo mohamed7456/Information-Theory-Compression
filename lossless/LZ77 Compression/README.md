@@ -1,7 +1,6 @@
 # 📦 LZ77 Compression in Java
 
-This project implements a simple LZ77 compression and decompression tool in Java.
-
+This project implements a simple LZ77 compression and decompression tool in Java. It only generates LZ77 tag structure without creating real compressed files.
 ## 💻 How to Use
 
 ### Clone the repository:
@@ -36,3 +35,6 @@ For example: `data/input.txt` or just `input.txt` if it’s in the same folder.
 - All input/output files will be saved in the same directory as the Java file unless full paths are provided.
 - No external dependencies required.
 - Written in pure Java, compatible with JDK 8+.
+
+## Future Work
+- Make real compressed binary files.
