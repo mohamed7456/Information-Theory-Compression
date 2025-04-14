@@ -14,8 +14,8 @@ This project implements the LZ78 compression algorithm and its corresponding dec
 
 📁 File Structure
 
-├── LZ78compression.java <br>
-├── files/ <br>
+├── LZ78compression.java <br>     # Main Java program
+├── files/ <br>                  # Folder for input/output files
 │   ├── your_input_file.txt <br>
 │   ├── your_input_file_compressed <br>
 │   └── your_input_file_compressed_decompressed.txt <br>
