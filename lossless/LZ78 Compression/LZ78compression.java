@@ -198,7 +198,7 @@ public class LZ78compression {
                 System.out.println("File saved as " + file.getAbsolutePath());
             }
         } catch (IOException e) {
-            System.out.println("Cannot write to file: " + fileName);
+            System.err.println("An error occurred while processing the file: " + e.getMessage());
         }
     }
 
@@ -271,7 +271,7 @@ public class LZ78compression {
         try (FileOutputStream fos = new FileOutputStream(filename)) {
             fos.write(byteArray);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("An error occurred while processing the file: " + e.getMessage());
         }
     }
 
@@ -285,7 +285,7 @@ public class LZ78compression {
                 binaryString.append(byteString);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("An error occurred while processing the file: " + e.getMessage());
         }
         return binaryString.toString();
     }
