@@ -44,33 +44,26 @@ public class LZ77compression {
 
     private static String readFromFile(String fileName) {
         StringBuilder sb = new StringBuilder();
-        try {
-            File inputDir = new File("text_files");
-            File file = new File(inputDir, fileName + ".txt");
-
-            if (!file.exists()) {
-                System.out.println("File not found: " + file.getAbsolutePath());
-                return "";
+        File file = new File(fileName);
+    
+        if (!file.exists()) {
+            System.out.println("File not found: " + file.getAbsolutePath());
+            return "";
+        }
+        try (Scanner sc = new Scanner(file)) {
+            while (sc.hasNextLine()) {
+                sb.append(sc.nextLine()).append("\n");
             }
-            try (Scanner sc = new Scanner(file)) {
-                while (sc.hasNextLine()) {
-                    sb.append(sc.nextLine()).append("\n");
-                }
-            }
-        } 
-        catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             System.out.println("Cannot read file: " + fileName);
         }
         return sb.toString().trim();
     }
+    
 
     private static void createFile(String fileName, String content) {
+        File file = new File(fileName + ".txt");
         try {
-            File outputDir = new File("text_files");
-            if (!outputDir.exists()) {
-                outputDir.mkdirs();
-            }
-            File file = new File(outputDir, fileName + ".txt");
             file.createNewFile();
             try (java.io.FileWriter writer = new java.io.FileWriter(file)) {
                 writer.write(content);
@@ -80,6 +73,7 @@ public class LZ77compression {
             System.out.println("Cannot write to file: " + fileName);
         }
     }
+    
 
     public static class Tag {
         int position;
