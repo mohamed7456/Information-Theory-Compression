@@ -72,9 +72,9 @@ abracadabra
 - Custom Tag class representing LZ78 tags
 
 ### 🧾 Notes
-All input .txt files should be placed in the files/ folder.
+- All input .txt files should be placed in the files/ folder.
 
-Compressed files are saved without extension, while decompressed files are saved with .txt.
+- Compressed files are saved without extension, while decompressed files are saved with .txt.
 
 ### 📄 License
-This project is for academic and educational use.
+- This project is for academic and educational use.
