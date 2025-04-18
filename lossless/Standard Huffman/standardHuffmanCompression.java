@@ -285,7 +285,7 @@ public class standardHuffmanCompression {
             
         } 
         catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("An error occurred while saving the encoded data: " + e.getMessage());
         }
     }
 
@@ -293,7 +293,7 @@ public class standardHuffmanCompression {
         try (PrintWriter pw = new PrintWriter(new FileWriter(fileName))) {
             codeTable.forEach((c, code) -> pw.println(c + ":" + code));
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("An error occurred while saving the code table: " + e.getMessage());
         }
     }
 }
