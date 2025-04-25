@@ -1,18 +1,18 @@
-# 📦 LZ78 Compression & Decompression in Java
+# LZ78 Compression & Decompression in Java
 This project implements the LZ78 compression algorithm and its corresponding decompression in Java. It reads a text file, compresses it into binary tags using LZ78, and allows restoring the original file via decompression.
 
-## 🚀 Features
-🔄 Compresses and decompresses text files using the LZ78 algorithm.
+## Features
+Compresses and decompresses text files using the LZ78 algorithm.
 
-💾 Writes compressed data in binary format.
+Writes compressed data in binary format.
 
-📂 All files are saved in a files/ directory.
+All files are saved in a files/ directory.
 
-🧱 Includes a custom binary encoding and decoding scheme.
+Includes a custom binary encoding and decoding scheme.
 
-🧪 Interactive menu-driven terminal application.
+Interactive menu-driven terminal application.
 
-📁 File Structure
+File Structure
 
 ├── LZ78compression.java <br>
 ├── files/ <br>
@@ -34,7 +34,7 @@ This project implements the LZ78 compression algorithm and its corresponding dec
 2. Uses the stored position and character to rebuild the dictionary.
 3. Reconstructs the original text step-by-step.
 
-▶️ How to Run
+▶How to Run
 
 1. Compile the Java file:
    ```bash
@@ -52,7 +52,7 @@ This project implements the LZ78 compression algorithm and its corresponding dec
    ```
 Provide file names (without extension) when prompted. Make sure the .txt file is inside the files/ directory.
 
-📌 Example
+Example
 Given a file sample.txt with content:
 ```bash
 abracadabra
@@ -62,7 +62,7 @@ After compression and decompression, the output file sample_compressed_decompres
 abracadabra
 ```
 
-### 🧠 Concepts Used
+### Concepts Used
 - HashMap for dictionary implementation
 
 - Bit manipulation for binary conversion
@@ -71,10 +71,10 @@ abracadabra
 
 - Custom Tag class representing LZ78 tags
 
-### 🧾 Notes
+### Notes
 - All input .txt files should be placed in the files/ folder.
 
 - Compressed files are saved without extension, while decompressed files are saved with .txt.
 
-### 📄 License
+### License
 - This project is for academic and educational use.
