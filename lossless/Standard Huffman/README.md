@@ -10,7 +10,6 @@ This project implements the **Standard Huffman Compression Algorithm** in Java. 
 - **Huffman Decoding**: Restores the original text from the compressed binary file.
 - **Entropy Calculation**: Calculates the entropy of the input text.
 - **Code Table Generation**: Saves the Huffman code table for decoding.
-- **Interactive Menu**: Provides a user-friendly terminal interface.
 - **Dynamic File Paths**: Users can specify file paths for input and output files.
 
 ---
