@@ -44,14 +44,14 @@ This project implements the **Standard Huffman Compression Algorithm** in Java. 
    javac standardHuffmanCompression.java
 
 2. Run the program:
-```bash
-java standardHuffmanCompression
-```
+   ```bash
+   java standardHuffmanCompression
+   ```
 
 3. Follow the menu options:
-- 1 for Encoding
-- 2 for Decoding
-- 3 to Exit the Program
+   - 1 for Encoding
+   - 2 for Decoding
+   - 3 to Exit the Program
 
 ## Input and Output Instructions
 Input
@@ -69,8 +69,8 @@ Encoding
 - Entropy: 3.238901256602631
 - Compressed Stream: 1000100000011111101001011110110011011111010 (binary representation)
 - Output Files:
-- - C:\files\sample_encoded.bin
-- - C:\files\sample_code_table.txt
+   - C:\files\sample_encoded.bin
+   - C:\files\sample_code_table.txt
 
 Decoding
 - Decoded File: C:\files\sample_decoded.txt
