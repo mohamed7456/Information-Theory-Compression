@@ -2,37 +2,37 @@
 This project implements the LZ78 compression algorithm and its corresponding decompression in Java. It reads a text file, compresses it into binary tags using LZ78, and allows restoring the original file via decompression.
 
 ## Features
-Compresses and decompresses text files using the LZ78 algorithm.
+- Compresses and decompresses text files using the LZ78 algorithm.
 
-Writes compressed data in binary format.
+- Writes compressed data in binary format.
 
-All files are saved in a files/ directory.
+- All files are saved in a files/ directory.
 
-Includes a custom binary encoding and decoding scheme.
+- Includes a custom binary encoding and decoding scheme.
 
-Interactive menu-driven terminal application.
+- Interactive menu-driven terminal application.
 
-File Structure
+## File Structure
 
-├── LZ78compression.java <br>
-├── files/ <br>
-│   ├── your_input_file.txt <br>
-│   ├── your_input_file_compressed <br>
-│   └── your_input_file_compressed_decompressed.txt <br>
+   ├── LZ78compression.java <br>
+   ├── files/ <br>
+   │   ├── your_input_file.txt <br>
+   │   ├── your_input_file_compressed <br>
+   │   └── your_input_file_compressed_decompressed.txt <br>
 
 ## How It Works
 
 ### Compression
-1. The input file is read character by character.
-2. A dictionary is built to store substrings.
-3. Each substring is replaced with a tag: `<position, nextChar>`.
-4. Tags are converted into a binary format and written to a file.
-5. The first 8 bits indicate the number of bits used for positions.
+   1. The input file is read character by character.
+   2. A dictionary is built to store substrings.
+   3. Each substring is replaced with a tag: `<position, nextChar>`.
+   4. Tags are converted into a binary format and written to a file.
+   5. The first 8 bits indicate the number of bits used for positions.
 
 ### Decompression
-1. Reads binary tags from the file.
-2. Uses the stored position and character to rebuild the dictionary.
-3. Reconstructs the original text step-by-step.
+   1. Reads binary tags from the file.
+   2. Uses the stored position and character to rebuild the dictionary.
+   3. Reconstructs the original text step-by-step.
 
 How to Run
 
