@@ -1,10 +1,10 @@
-# 📦 Standard Huffman Compression & Decompression in Java
+# Standard Huffman Compression & Decompression in Java
 
 This project implements the **Standard Huffman Compression Algorithm** in Java. It allows encoding text files into compressed binary files and decoding them back to their original form using Huffman coding. The program is flexible and allows users to specify file paths dynamically.
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Huffman Encoding**: Compresses text files into binary files using Huffman coding.
 - **Huffman Decoding**: Restores the original text from the compressed binary file.
@@ -15,7 +15,7 @@ This project implements the **Standard Huffman Compression Algorithm** in Java. 
 
 ---
 
-## 🛠 How It Works
+## How It Works
 
 ### Encoding
 1. Reads the input text file from the specified path.
@@ -33,7 +33,7 @@ This project implements the **Standard Huffman Compression Algorithm** in Java. 
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ### Prerequisites
 - Java Development Kit (JDK) 8 or higher installed.
