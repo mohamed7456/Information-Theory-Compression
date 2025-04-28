@@ -20,7 +20,7 @@ File Structure
 │   ├── your_input_file_compressed <br>
 │   └── your_input_file_compressed_decompressed.txt <br>
 
-## 🛠 How It Works
+## How It Works
 
 ### Compression
 1. The input file is read character by character.
@@ -34,7 +34,7 @@ File Structure
 2. Uses the stored position and character to rebuild the dictionary.
 3. Reconstructs the original text step-by-step.
 
-▶How to Run
+How to Run
 
 1. Compile the Java file:
    ```bash
