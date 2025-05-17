@@ -1,4 +1,4 @@
-# Adaptive Huffman Coding (Java)
+# Adaptive Huffman Coding 
 
 This project implements Adaptive Huffman Coding in Java, featuring both encoding and decoding, as well as a visualization of the adaptive Huffman tree.
 
