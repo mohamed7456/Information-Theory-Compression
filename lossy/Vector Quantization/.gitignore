@@ -1,0 +1,20 @@
+# Ignore image files
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.gif
+*.tiff
+
+# Ignore PDF files
+*.pdf
+
+# Ignore report files
+report.*
+*.doc
+*.docx
+*.odt
+
+# Ignore output and test images directories
+/output/
+/test_images/
