@@ -45,7 +45,7 @@ Mean Squared Error (MSE): 454.63
 Original Size: 262144.00 bytes
 Compressed Size: 8448.00 bytes
 Compression Ratio: 31.03
-```
+``` 
 
 ## Main Components
 
