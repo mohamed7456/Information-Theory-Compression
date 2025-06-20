@@ -18,14 +18,14 @@ public class LZ77compression {
             sc.nextLine(); 
             switch (choice) {
                 case 1 -> {
-                    System.out.println("Enter the file name to compress:");
+                    System.out.println("Enter the full path to the file you want to compress:");
                     String fileName = sc.nextLine();
                     String input = readFromFile(fileName);
                     String compressedString = compress(input);
                     createFile(fileName + "_compressed", compressedString);
                 }
                 case 2 -> {
-                    System.out.println("Enter the file name to decompress:");
+                    System.out.println("Enter the full path to the file you want to decompress:");
                     String fileName = sc.nextLine();
                     String input = readFromFile(fileName);
                     String decompressedString = decompress(input);

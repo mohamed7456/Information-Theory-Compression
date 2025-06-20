@@ -1,40 +1,38 @@
 # LZ77 Compression in Java
 
-This project implements a simple LZ77 compression and decompression tool in Java. It only generates LZ77 tag structure without creating real compressed files.
-## How to Use
+This project implements a simple LZ77 compression and decompression tool in Java. Two versions are provided:
+- **Interactive version:** `LZ77compression.java` (menu-driven, prompts user for file names)
+- **File I/O version:** `LZ77compressionFileIO.java` (menu-driven, takes full file paths, saves output in an `output_lz77` directory in the current working directory)
 
-### Clone the repository:
-```bash
-git clone https://github.com/yourusername/LZ77compression.git
-cd LZ77compression
-```
+## How to Use
 
 ### Compile the Java code:
 ```bash
-javac LZ77compression.java
+javac LZ77compression.java LZ77compressionFileIO.java
 ```
 
-### Run the program:
+### Run the interactive version:
 ```bash
 java LZ77compression
 ```
+- Option 1: Compress a text file (prompts for file path)
+- Option 2: Decompress a compressed file (prompts for file path)
+- Option 3: Exit the program
 
-### Follow the prompts:
-- Option 1: Compress a text file.
-- Option 2: Decompress a compressed file.
-- Option 3: Exit the program.
-
-When prompted, provide the full path or relative path of the .txt file to be compressed or decompressed.
-For example: `data/input.txt` or just `input.txt` if it’s in the same folder.
+### Run the file I/O version:
+```bash
+java LZ77compressionFileIO
+```
+- You will be prompted to enter the full path to the input file for compression or decompression.
+- Output files will be saved in a directory named **output_lz77** in the current working directory.
+- Compressed files are named `<original_filename>.lz77`.
+- Decompressed files are named `<original_filename>_decompressed.txt`.
 
 ## Output Files
-- Compressed files will be saved as `<original_filename>_compressed.txt`
-- Decompressed files will be saved as `<original_filename>_decompressed.txt`
+- All output files are saved in a directory named **output_lz77** in the current working directory.
+- Compressed files: `output_lz77/<original_filename>.lz77`
+- Decompressed files: `output_lz77/<original_filename>_decompressed.txt`
 
-## Notes
-- All input/output files will be saved in the same directory as the Java file unless full paths are provided.
-- No external dependencies required.
-- Written in pure Java, compatible with JDK 8+.
+## Note
+- The search buffer size for LZ77 is set to `final int SEARCH_BUFFER_SIZE = 5;` in the code for demonstration and small test files. **If you use this on real or long data, you should increase this value for better compression efficiency.**
 
-## Future Work
-- Make real compressed binary files.
